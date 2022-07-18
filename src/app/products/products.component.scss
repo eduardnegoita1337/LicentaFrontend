@@ -1,0 +1,108 @@
+.card {
+    background-color: #fdf4da;
+    width: 300px;
+    height: 515px;
+    border-radius: 10px;
+    position: relative;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    margin-left: 5%;
+
+}
+h1 {
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 35px;
+}
+.card-container {
+    position: relative;
+    top: 5%;
+    display:flex;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    justify-content:start;
+    flex-wrap: wrap;
+}
+.card .image > img {
+    min-width: 100%;
+    border-radius:10px;
+}
+
+.card .info{
+    display:block;
+    justify-content: space-between;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    align-items: flex-end;
+    padding: 0px 25px 0px 25px;
+}
+
+.card .info h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card .price{
+    text-align: center;
+    color: red;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card .btn{
+    display:flex;
+    height: 60px;
+    
+    position: relative;
+    top: 2%;
+    
+}
+.card.desc {
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+}
+.buyTxt {
+    margin-top: 30%;
+    padding-left: 5%;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 20px;
+}
+.button-24 {
+    background: #fc6f85;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    width:100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .button-24:hover,
+  .button-24:active {
+    background-color: #FFFFFF;
+    background-position: 0 0;
+    color: #fc6f85;
+  }
+  
+  .button-24:active {
+    opacity: .5;
+  }
+.desc {
+    position: relative;
+    top: 25%;
+}

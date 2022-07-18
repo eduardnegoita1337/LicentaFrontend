@@ -1,0 +1,29 @@
+<h1>Products</h1>
+<div class="card-container">
+<div class="card" *ngFor="let product of products">
+    <div class="image">
+        <img width="250" height="200" src="{{product.imagePath}}" alt="">
+    </div>
+    <div class="info">
+        <div class="title">
+            <h3>{{product.name}}</h3>
+        </div>
+
+        <div class="price">
+            <p>{{product.price}} RON</p>
+        </div>
+        <div class="price">
+            <p>{{product.pointsPrice}} POINTS</p>
+        </div>
+        <div class="desc">
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+    <span class="buyTxt">Buy with</span>
+    <div class="btn">
+        <button  class="button-24" (click)="buyWithCash(product)">Cash</button>
+        
+        <button class="button-24" (click)="buyWithPoints(product)" [disabled]="checkIfCanBuy(product)">Points</button>
+    </div>
+</div>
+</div>

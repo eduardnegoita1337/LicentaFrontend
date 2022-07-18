@@ -1,0 +1,12 @@
+<app-navbar (onToggleSideNav)="onToggleSideNav($event)"></app-navbar>
+<div class="topBar">
+  <a  *ngIf="isUserAuthenticated() == false" class="button-24" href="login">Login</a>
+  <br *ngIf="isUserAuthenticated()==false"/>
+  <a  *ngIf="isUserAuthenticated() == false" class="button-24" href="register">Register</a>
+  <a *ngIf="isUserAuthenticated()" class="button-24" (click)="logOut()" href="login">Logout</a>
+  <a *ngIf="isUserAuthenticated()" class="button-24"  href="user">{{loggedUser.firstName}}'s Panel</a>
+</div>
+<app-body
+  [collapsed]="isSideNavCollapsed"
+  [screenWidth]="screenWidth"
+></app-body>

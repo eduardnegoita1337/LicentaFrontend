@@ -1,0 +1,56 @@
+.title {
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}
+.dataRow1 {
+    position:absolute;
+    top: 30%;
+    left: 20%;
+    text-align: left;
+}
+.dataRow2 {
+    position:absolute;
+    top: 35%;
+    left: 20%;
+    text-align: left;
+}
+.dataRow3 {
+    position:absolute;
+    top: 40%;
+    left: 20%;
+    text-align: left;
+}
+.dataRow4 {
+    position:absolute;
+    top: 45%;
+    left: 20%;
+    text-align: left;
+}
+.orderTitle {
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+table {
+    width: 60%;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    background-color: #fdf4da;
+}
+.noOrders{
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+.pageContainer {
+    border-radius: 40px;
+    background-color: #fdf4da;
+    width: 90%;
+    height: 100%;
+}
