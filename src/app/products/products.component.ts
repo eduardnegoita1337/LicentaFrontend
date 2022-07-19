@@ -63,10 +63,15 @@ export class ProductsComponent implements OnInit {
       price: 0,
       pointsPrice: product.pointsPrice
     }
+    if(this.user){
     this.reqS.put('https://localhost:44302/api/orders/addItemToCart', obj).subscribe(res => {
        console.log('Product added to shopping cart');
        Swal.fire('Product added!', 'Product added to the shopping cart', 'success');
     })
+    }
+    else Swal.fire('Login required',
+     'You need to be logged in to add a product to cart. If you do not have an account, please create one.', 'error');
+
   }
   decodeToken(token: string): any {
     try {
